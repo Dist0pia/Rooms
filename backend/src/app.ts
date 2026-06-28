@@ -35,7 +35,7 @@ export async function buildApp() {
 
   // CORS ограничивает кросс-доменные запросы. Здесь полностью запрещаем их (origin: false) по умолчанию.
 await app.register(cors, {
-  origin: ['https://romabellon.github.io'],
+  origin: ['https://Dist0pia.github.io',/^http:\/\/localhost:\d+$/,],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],});
